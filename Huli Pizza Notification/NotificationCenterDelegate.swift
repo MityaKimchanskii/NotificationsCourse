@@ -2,8 +2,8 @@
 //  NotificationCenterDelegate.swift
 //  HuliPizzaNotifications
 //
-//  Created by Steven Lipton on 10/9/18.
-//  Copyright © 2018 Steven Lipton. All rights reserved.
+//  Created by Mitya Kim on 10/19/22.
+//  Copyright © 2022 Steven Lipton. All rights reserved.
 //
 
 import UIKit
