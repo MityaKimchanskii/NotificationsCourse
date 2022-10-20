@@ -44,6 +44,9 @@ class ViewController: UIViewController {
             content.title = "A Schedule Pizza"
             content.body = "Time to make a Pizza!"
             
+            // for group notification we can use threadIdentifier
+            content.threadIdentifier = "scheduled"
+            
             var dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
             dateComponents.second = dateComponents.second! + 15
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
@@ -83,6 +86,12 @@ class ViewController: UIViewController {
             self.pizzaNumber += 1
             content.subtitle = "Pizza \(self.pizzaNumber)"
             // if repeats = false timeinterval should be more than 0 sec, else if repeats equal true than timeInterval can be only greater than 60 sec!!!
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60.0, repeats: true)
+            
+            
+            // for group notification we can use threadIdentifier
+            content.threadIdentifier = "make.pizza"
+            
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
             
             let id = "message.pizza.\(self.pizzaNumber)"
