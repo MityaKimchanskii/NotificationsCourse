@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="naD-uK-snJ">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="naD-uK-snJ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,33 +19,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HD2-ce-CA6">
-                                <rect key="frame" x="10" y="74.5" width="355" height="582.5"/>
+                                <rect key="frame" x="10" y="144.5" width="355" height="322.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNU-uh-16B">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="181"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNU-uh-16B">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="94"/>
+                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <state key="normal" title="Schedule a Pizza">
-                                            <color key="titleColor" name="Honeydew"/>
+                                            <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
                                             <action selector="schedulePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="593-R2-rAP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-v1-QN8">
-                                        <rect key="frame" x="0.0" y="201" width="355" height="180.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-v1-QN8">
+                                        <rect key="frame" x="0.0" y="114" width="355" height="94.5"/>
+                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <state key="normal" title="Make A Pizza">
-                                            <color key="titleColor" name="Honeydew"/>
+                                            <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
                                             <action selector="makePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6X3-CU-9aU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwh-tY-2l1">
-                                        <rect key="frame" x="0.0" y="401.5" width="355" height="181"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwh-tY-2l1">
+                                        <rect key="frame" x="0.0" y="228.5" width="355" height="94"/>
+                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <state key="normal" title="Manage Notifications">
-                                            <color key="titleColor" name="Honeydew"/>
+                                            <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="MtA-MV-jzt" kind="show" id="Tv1-BM-QFj"/>
@@ -54,24 +56,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huli Pizza Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-pw-ZV2">
-                                <rect key="frame" x="10" y="30" width="355" height="34.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-pw-ZV2">
+                                <rect key="frame" x="10" y="10" width="355" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
-                                <color key="textColor" name="Honeydew"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="Dark Jungle Green"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GyO-pw-ZV2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="2vi-5t-0a6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HD2-ce-CA6" secondAttribute="bottom" constant="10" id="97x-UM-vUk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HD2-ce-CA6" secondAttribute="bottom" constant="200" id="97x-UM-vUk"/>
                             <constraint firstItem="GyO-pw-ZV2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ebe-VU-X2i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HD2-ce-CA6" secondAttribute="trailing" constant="10" id="Gkl-y9-9hu"/>
                             <constraint firstItem="HD2-ce-CA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jEk-09-hvK"/>
-                            <constraint firstItem="HD2-ce-CA6" firstAttribute="top" secondItem="GyO-pw-ZV2" secondAttribute="bottom" constant="10" id="qZE-Md-fWk"/>
+                            <constraint firstItem="HD2-ce-CA6" firstAttribute="top" secondItem="GyO-pw-ZV2" secondAttribute="bottom" constant="100" id="qZE-Md-fWk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GyO-pw-ZV2" secondAttribute="trailing" constant="10" id="zKT-OJ-pzO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fnn-Ae-45f"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -89,44 +91,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-Hq-IyD">
-                                <rect key="frame" x="10" y="397" width="355" height="260"/>
+                                <rect key="frame" x="10" y="377" width="355" height="280"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Ku-plk">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                        <state key="normal" title="View Pending Notifications">
-                                            <color key="titleColor" name="Honeydew"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Ku-plk">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="62.5"/>
+                                        <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="View Pending Notifications"/>
                                         <connections>
                                             <action selector="viewPendingNotifications:" destination="MtA-MV-jzt" eventType="touchUpInside" id="iIP-ZQ-A9c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-60-Ywu">
-                                        <rect key="frame" x="0.0" y="67.5" width="355" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                        <state key="normal" title="View Delivered Notifications">
-                                            <color key="titleColor" name="Honeydew"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-60-Ywu">
+                                        <rect key="frame" x="0.0" y="72.5" width="355" height="62.5"/>
+                                        <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="View Delivered Notifications"/>
                                         <connections>
                                             <action selector="viewDeliveredNotifications:" destination="MtA-MV-jzt" eventType="touchUpInside" id="e1r-6A-RGH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zul-h7-uev">
-                                        <rect key="frame" x="0.0" y="135" width="355" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                        <state key="normal" title="Next Pizza Step">
-                                            <color key="titleColor" name="Honeydew"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zul-h7-uev">
+                                        <rect key="frame" x="0.0" y="145" width="355" height="62.5"/>
+                                        <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Next Pizza Step"/>
                                         <connections>
                                             <action selector="nextPizzaStep:" destination="MtA-MV-jzt" eventType="touchUpInside" id="uGt-BS-Hd3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-np-bMN">
-                                        <rect key="frame" x="0.0" y="202.5" width="355" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                        <state key="normal" title="Remove Notification">
-                                            <color key="titleColor" name="Honeydew"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-np-bMN">
+                                        <rect key="frame" x="0.0" y="217.5" width="355" height="62.5"/>
+                                        <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Remove Notification"/>
                                         <connections>
                                             <action selector="removeNotification:" destination="MtA-MV-jzt" eventType="touchUpInside" id="8ax-cP-qjk"/>
                                         </connections>
@@ -134,20 +132,20 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Console" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-fd-VZQ">
-                                <rect key="frame" x="10" y="84" width="355" height="303"/>
-                                <color key="backgroundColor" name="Honeydew"/>
+                                <rect key="frame" x="10" y="64" width="355" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <color key="textColor" name="Dark Jungle Green"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="NyP-N2-tAx" appends="YES" id="Jia-MK-oE1"/>
                                 </connections>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qww-cl-LNq">
-                                <rect key="frame" x="10" y="30" width="355" height="44"/>
+                                <rect key="frame" x="10" y="10" width="355" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q8-7L-9Zz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q8-7L-9Zz">
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="44"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                         <state key="normal" title="&lt;&lt;">
@@ -160,13 +158,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huli Pizza Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-oj-9o6">
                                         <rect key="frame" x="64.5" y="0.0" width="290.5" height="44"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="28"/>
-                                        <color key="textColor" name="Honeydew"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" name="Dark Jungle Green"/>
+                        <viewLayoutGuide key="safeArea" id="yw4-8O-Aad"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8fZ-Hq-IyD" firstAttribute="top" secondItem="lKJ-fd-VZQ" secondAttribute="bottom" constant="10" id="61z-It-FrU"/>
                             <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="lKJ-fd-VZQ" secondAttribute="trailing" constant="10" id="BgH-Ei-O00"/>
@@ -180,7 +178,6 @@
                             <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="8fZ-Hq-IyD" secondAttribute="trailing" constant="10" id="w2u-j7-1kM"/>
                             <constraint firstItem="lKJ-fd-VZQ" firstAttribute="height" secondItem="Ye2-Ag-Rqn" secondAttribute="height" multiplier="5/11" id="wTT-9p-pwG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yw4-8O-Aad"/>
                     </view>
                     <connections>
                         <outlet property="consoleView" destination="lKJ-fd-VZQ" id="b4E-ds-FyM"/>
@@ -202,7 +199,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="naD-uK-snJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="thf-03-n8s">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -216,11 +213,14 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Dark Jungle Green">
-            <color red="0.12200000137090683" green="0.15299999713897705" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Honeydew">
             <color red="0.95300000905990601" green="0.98799997568130493" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
