@@ -88,6 +88,7 @@ class ManageNotificationsViewController: UIViewController{
             
             if newStepNumber == pizzaSteps.count - 1 {
                 updatedContent.threadIdentifier = request.identifier
+                updatedContent.categoryIdentifier = "snooze.category"
             }
             
             updatedContent.body = pizzaSteps[stepNumber]

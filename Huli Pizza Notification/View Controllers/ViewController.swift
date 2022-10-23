@@ -41,18 +41,29 @@ class ViewController: UIViewController {
 //            self.introNotification()
             
             let content = UNMutableNotificationContent()
-            content.title = "A Schedule Pizza"
-            content.body = "Time to make a Pizza!"
+            content.title = "A Scheduled Pizza"
+            content.body = "Time to make a pizza!"
             
             // for group notification we can use threadIdentifier
             content.threadIdentifier = "scheduled"
+            content.categoryIdentifier = "snooze.category"
             
-            var dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
+            // add media
+//            let imageURL = URL(fileReferenceLiteralResourceName: "PizzaIcon.png")
+//            let imageAttachment = try! UNNotificationAttachment(identifier: "image.PizzaIcon.png", url: imageURL, options: nil)
+            
+            let soundURL = URL(fileReferenceLiteralResourceName: "EHuliUke.mp3")
+            let soundAttachment = try! UNNotificationAttachment(identifier: "sound.EHuliUke.mp3", url: soundURL, options: nil)
+            
+//            content.attachments = [imageAttachment]
+            content.attachments = [soundAttachment]
+            
+            
+            var dateComponents = Calendar.current.dateComponents([.hour,.minute,.second], from: Date())
             dateComponents.second = dateComponents.second! + 15
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-            
-            let id = "message.scheduled.\(Date().timeIntervalSinceReferenceDate)"
-            self.addNotification(trigger: trigger, content: content, id: id)
+            let identifier = "message.scheduled.\(Date().timeIntervalSinceReferenceDate)"
+            self.addNotification(trigger: trigger, content: content, id: identifier)
         }
     }
     
@@ -91,6 +102,7 @@ class ViewController: UIViewController {
             
             // for group notification we can use threadIdentifier
             content.threadIdentifier = "make.pizza"
+            content.categoryIdentifier = "pizza.steps.category"
             
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
             

@@ -1,7 +1,15 @@
 {
     "aps":{
-        "alert":"Enter your message",
+        "alert":{
+            "title":"Huli Pizza CO.",
+            "body":"You going to love this",
+            "subtitle":"Your order is almost ready"
+        },
         "badge":1,
-        "sound":"default"
+        "sound":"default",
+        "category":"snooze.category",
+        "thread-id":"scheduled",
+        "mutable-content":1
     }
+    "order":["Pizza", "Pie", "Coockie"]
 }

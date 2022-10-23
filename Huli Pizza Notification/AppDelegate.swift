@@ -13,9 +13,37 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    // for push notification
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // TODO: add code here
+        print(tokenString(deviceToken))
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        printError(error, location: "Remote notification registration")
+    }
 
+    
+    
     // for notification in all viewControllers
     let ncDelegate = NotificationCenterDelegate()
+    
+    // for interaction with notifications
+    func setCategories() {
+        // add actions for notifications
+        let nextStepAction = UNNotificationAction(identifier: "next.step", title: "Next", options: [])
+        let snoozeAction = UNNotificationAction(identifier: "snooze", title: "Snooze", options: [])
+        let cancelAction = UNNotificationAction(identifier: "cancel", title: "Cancel Pizza", options: [.destructive])
+        
+        let textInputAction = UNTextInputNotificationAction(identifier: "text.input", title: "Comments", textInputButtonTitle: "Send", textInputPlaceholder: "Comments here")
+        
+        let pizzaStepsCategory = UNNotificationCategory(identifier: "pizza.steps.category", actions: [nextStepAction, snoozeAction, textInputAction, cancelAction], intentIdentifiers: [], options: [])
+        
+        let snoozeCategory = UNNotificationCategory(identifier: "snooze.category", actions: [snoozeAction, textInputAction], intentIdentifiers: [], options: [])
+        
+        UNUserNotificationCenter.current().setNotificationCategories([pizzaStepsCategory, snoozeCategory])
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -23,10 +51,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let error = error {
                 print("Error: \(error.localizedDescription) \n---\n \(error)")
             }
+            
+            // for push notifications
+            if granted {
+                DispatchQueue.main.async {
+                    application.registerForRemoteNotifications()
+                }
+            }
         }
         
         // for notification in all viewControllers
         UNUserNotificationCenter.current().delegate = ncDelegate
+        
+        setCategories()
         
         return true
     }
@@ -62,6 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    // for push notification
     func tokenString(_ deviceToken:Data) -> String{
         //code to make a token string
         let bytes = [UInt8](deviceToken)
