@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,36 +18,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HD2-ce-CA6">
-                                <rect key="frame" x="10" y="144.5" width="355" height="322.5"/>
+                                <rect key="frame" x="50" y="146" width="275" height="148"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNU-uh-16B">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="94"/>
-                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Schedule a Pizza">
-                                            <color key="titleColor" systemColor="linkColor"/>
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="schedulePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="593-R2-rAP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-v1-QN8">
-                                        <rect key="frame" x="0.0" y="114" width="355" height="94.5"/>
-                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="56" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Make A Pizza">
-                                            <color key="titleColor" systemColor="linkColor"/>
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="makePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6X3-CU-9aU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwh-tY-2l1">
-                                        <rect key="frame" x="0.0" y="228.5" width="355" height="94"/>
-                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                        <rect key="frame" x="0.0" y="112" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Manage Notifications">
-                                            <color key="titleColor" systemColor="linkColor"/>
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="MtA-MV-jzt" kind="show" id="Tv1-BM-QFj"/>
@@ -57,20 +56,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-pw-ZV2">
-                                <rect key="frame" x="10" y="10" width="355" height="34.5"/>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                <rect key="frame" x="10" y="10" width="355" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.88962477449999999" blue="0.99984163049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GyO-pw-ZV2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="2vi-5t-0a6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HD2-ce-CA6" secondAttribute="bottom" constant="200" id="97x-UM-vUk"/>
                             <constraint firstItem="GyO-pw-ZV2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ebe-VU-X2i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HD2-ce-CA6" secondAttribute="trailing" constant="10" id="Gkl-y9-9hu"/>
-                            <constraint firstItem="HD2-ce-CA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jEk-09-hvK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HD2-ce-CA6" secondAttribute="trailing" constant="50" id="Gkl-y9-9hu"/>
+                            <constraint firstItem="HD2-ce-CA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jEk-09-hvK"/>
                             <constraint firstItem="HD2-ce-CA6" firstAttribute="top" secondItem="GyO-pw-ZV2" secondAttribute="bottom" constant="100" id="qZE-Md-fWk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GyO-pw-ZV2" secondAttribute="trailing" constant="10" id="zKT-OJ-pzO"/>
                         </constraints>
@@ -91,40 +89,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-Hq-IyD">
-                                <rect key="frame" x="10" y="377" width="355" height="280"/>
+                                <rect key="frame" x="50" y="377" width="275" height="158"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Ku-plk">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="32"/>
                                         <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="View Pending Notifications"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="View Pending Notifications">
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="viewPendingNotifications:" destination="MtA-MV-jzt" eventType="touchUpInside" id="iIP-ZQ-A9c"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-60-Ywu">
-                                        <rect key="frame" x="0.0" y="72.5" width="355" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="42" width="275" height="32"/>
                                         <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="View Delivered Notifications"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="View Delivered Notifications">
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="viewDeliveredNotifications:" destination="MtA-MV-jzt" eventType="touchUpInside" id="e1r-6A-RGH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zul-h7-uev">
-                                        <rect key="frame" x="0.0" y="145" width="355" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="84" width="275" height="32"/>
                                         <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="Next Pizza Step"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Next Pizza Step">
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="nextPizzaStep:" destination="MtA-MV-jzt" eventType="touchUpInside" id="uGt-BS-Hd3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-np-bMN">
-                                        <rect key="frame" x="0.0" y="217.5" width="355" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="126" width="275" height="32"/>
                                         <color key="backgroundColor" red="0.66759485009999997" green="0.53540861610000001" blue="0.9568319917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="Remove Notification"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Remove Notification">
+                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="removeNotification:" destination="MtA-MV-jzt" eventType="touchUpInside" id="8ax-cP-qjk"/>
                                         </connections>
@@ -146,36 +152,35 @@
                                 <rect key="frame" x="10" y="10" width="355" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q8-7L-9Zz">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="44"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                         <state key="normal" title="&lt;&lt;">
-                                            <color key="titleColor" name="Honeydew"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="backButton:" destination="MtA-MV-jzt" eventType="touchUpInside" id="RFw-MG-gfU"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huli Pizza Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-oj-9o6">
-                                        <rect key="frame" x="64.5" y="0.0" width="290.5" height="44"/>
-                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Notifications" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-oj-9o6">
+                                        <rect key="frame" x="138" y="0.0" width="217" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yw4-8O-Aad"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.88962477449999999" blue="0.99984163049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8fZ-Hq-IyD" firstAttribute="top" secondItem="lKJ-fd-VZQ" secondAttribute="bottom" constant="10" id="61z-It-FrU"/>
                             <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="lKJ-fd-VZQ" secondAttribute="trailing" constant="10" id="BgH-Ei-O00"/>
                             <constraint firstItem="qww-cl-LNq" firstAttribute="leading" secondItem="yw4-8O-Aad" secondAttribute="leading" constant="10" id="JD5-fw-Azz"/>
                             <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="qww-cl-LNq" secondAttribute="trailing" constant="10" id="L4i-VK-Yb2"/>
-                            <constraint firstItem="8fZ-Hq-IyD" firstAttribute="leading" secondItem="yw4-8O-Aad" secondAttribute="leading" constant="10" id="Vbu-WE-NE1"/>
+                            <constraint firstItem="8fZ-Hq-IyD" firstAttribute="leading" secondItem="yw4-8O-Aad" secondAttribute="leading" constant="50" id="Vbu-WE-NE1"/>
                             <constraint firstItem="lKJ-fd-VZQ" firstAttribute="top" secondItem="qww-cl-LNq" secondAttribute="bottom" constant="10" id="ar0-Rr-rvs"/>
-                            <constraint firstItem="yw4-8O-Aad" firstAttribute="bottom" secondItem="8fZ-Hq-IyD" secondAttribute="bottom" constant="10" id="cqU-yc-ERO"/>
                             <constraint firstItem="qww-cl-LNq" firstAttribute="top" secondItem="yw4-8O-Aad" secondAttribute="top" constant="10" id="f9f-gs-J3U"/>
                             <constraint firstItem="lKJ-fd-VZQ" firstAttribute="leading" secondItem="yw4-8O-Aad" secondAttribute="leading" constant="10" id="qid-R8-tjm"/>
-                            <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="8fZ-Hq-IyD" secondAttribute="trailing" constant="10" id="w2u-j7-1kM"/>
+                            <constraint firstItem="yw4-8O-Aad" firstAttribute="trailing" secondItem="8fZ-Hq-IyD" secondAttribute="trailing" constant="50" id="w2u-j7-1kM"/>
                             <constraint firstItem="lKJ-fd-VZQ" firstAttribute="height" secondItem="Ye2-Ag-Rqn" secondAttribute="height" multiplier="5/11" id="wTT-9p-pwG"/>
                         </constraints>
                     </view>
@@ -191,7 +196,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2029.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1958" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2S1-hM-FJo">
@@ -213,14 +218,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Honeydew">
-            <color red="0.95300000905990601" green="0.98799997568130493" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
